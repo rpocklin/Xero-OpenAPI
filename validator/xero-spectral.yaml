@@ -118,3 +118,22 @@ rules:
     then:
       field: "description"
       function: truthy
+
+  allowed-schema-types:
+    description: "Only boolean, string, number, object, and array types are allowed."
+    message: "Schema type '{{value}}' is not allowed. Allowed types: boolean, string, number, object, array."
+    severity: error
+    given: "$..type"
+    then:
+      function: enumeration
+      functionOptions:
+        values:
+          - boolean
+          - string
+          - number
+          - object   # dictionary
+          - array
+          - FIXED
+          - integer
+          - oauth2
+          - null
