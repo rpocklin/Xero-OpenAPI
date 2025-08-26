@@ -1,4 +1,8 @@
 .DS_Store
 
+node_modules
+docs/all.yaml
+docs/index.html
+
 # JetBrains generated files
 .idea
