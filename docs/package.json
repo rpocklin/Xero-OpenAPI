@@ -6,6 +6,7 @@
   "scripts": {
     "serve": "http-server .",
     "start": "yarn redocly preview --project-dir .",
+    "build": "yarn bundle && yarn generate",
     "bundle": "yarn redocly join ../xero*.yaml --output=all.yaml",
     "generate": "redocly build-docs all.yaml --lint-config=off --output=index.html"
   },

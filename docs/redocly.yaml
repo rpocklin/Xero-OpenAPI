@@ -1,0 +1,24 @@
+openapi:
+  disableSearch: true
+  expandResponses: 200,400
+  jsonSamplesExpandLevel: 1
+  layout: 'stacked'
+  theme:
+    rightPanel:
+      backgroundColor: '#333333'
+      textColor: '#eeeeee'
+    sidebar:
+      backgroundColor: '#bbf3fd'
+      textColor: '#000a1e'
+    colors:
+      text:
+        primary: '#000a1e'
+        secondary: '#404756'
+      accent:
+        main: '#80bce4'
+      primary:
+        main: '#0078c8'
+    typography:
+      fontSize: 14pt
+      headings:
+        fontWeight: normal
