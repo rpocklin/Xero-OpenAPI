@@ -21,6 +21,7 @@ files=(
     "xero_assets.yaml"
     "xero_bankfeeds.yaml"
     "xero-payroll-au.yaml"
+    "xero-webhooks.yaml"
 )
 
 total_files=${#files[@]}
