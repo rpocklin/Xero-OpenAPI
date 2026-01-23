@@ -19763,7 +19763,22 @@ components:
             HistoryRecords:
               - Details: Hello World
   parameters:
-    $ref: ./components/headers.yaml
+    xeroFeatures:
+      name: Xero-Features
+      in: header
+      required: false   # optional by default
+      schema:
+        type: string
+      description: Optional feature toggles (support multiple via comma or multi-header key/value pairs)
+    requiredHeader:
+      in: header
+      name: xero-tenant-id
+      x-snake: xero_tenant_id
+      description: Xero identifier for Tenant
+      example: YOUR_XERO_TENANT_ID
+      schema:
+        type: string
+      required: true
     summarizeErrors:
       in: query
       name: summarizeErrors
