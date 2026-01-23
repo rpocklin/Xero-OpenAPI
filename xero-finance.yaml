@@ -1190,15 +1190,7 @@ components:
             finance.cashvalidation.read: Grant read-only access to bank statement and reconcilation data
             finance.bankstatementsplus.read: Grant read-only access to bank statements accounting data
   parameters:
-    requiredHeader:
-      in: header
-      name: xero-tenant-id
-      x-snake: xero_tenant_id
-      description: Xero identifier for Tenant
-      example: YOUR_XERO_TENANT_ID
-      schema:
-        type: string
-      required: true
+    $ref: ./components/headers.yaml
   schemas:
     AccountUsage:
       type: object

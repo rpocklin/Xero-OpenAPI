@@ -220,6 +220,7 @@ components:
           scopes:
             marketplace.billing: Grant read-only access to fixed assets
   parameters:
+    $ref: ./components/headers.yaml#/xeroFeatures
     subscriptionId:
       required: true
       in: path

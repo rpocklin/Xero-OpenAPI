@@ -1006,14 +1006,7 @@ components:
             projects: Grant read-write access to projects
             projects.read: Grant read-only access to projects
   parameters:
-    requiredHeader:
-      in: header
-      name: Xero-Tenant-Id
-      x-snake: xero_tenant_id
-      description: Xero identifier for Tenant
-      schema:
-        type: string
-      required: true
+    $ref: ./components/headers.yaml
     chargeType:
       in: query
       name: chargeType

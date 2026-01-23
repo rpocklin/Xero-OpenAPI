@@ -3182,14 +3182,7 @@ components:
             payroll.timesheets: Grant read-write access to payroll timesheets
             payroll.timesheets.read: Grant read-only access to payroll timesheets
   parameters:
-    requiredHeader:
-      in: header
-      name: Xero-Tenant-Id
-      x-snake: xero_tenant_id
-      description: Xero identifier for Tenant
-      schema:
-        type: string
-      required: true
+    $ref: ./components/headers.yaml
     idempotencyKey:
       in: header
       name: Idempotency-Key

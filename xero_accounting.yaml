@@ -19763,15 +19763,7 @@ components:
             HistoryRecords:
               - Details: Hello World
   parameters:
-    requiredHeader:
-      in: header
-      name: xero-tenant-id
-      x-snake: xero_tenant_id
-      description: Xero identifier for Tenant
-      example: YOUR_XERO_TENANT_ID
-      schema:
-        type: string
-      required: true
+    $ref: ./components/headers.yaml
     summarizeErrors:
       in: query
       name: summarizeErrors

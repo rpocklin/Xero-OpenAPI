@@ -500,13 +500,7 @@ components:
             profile: your profile information
             bankfeeds: Grant read-write access to bankfeeds
   parameters:
-    requiredHeader:
-      in: header
-      name: Xero-Tenant-Id
-      description: Xero identifier for Tenant
-      schema:
-        type: string
-      required: true
+    $ref: ./components/headers.yaml
     idempotencyKey:
       in: header
       name: Idempotency-Key
